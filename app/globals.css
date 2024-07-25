@@ -17,6 +17,7 @@
 }
 body{
   height: 100vh;
+  background-color: #111222;
 }
 
 @layer utilities {
