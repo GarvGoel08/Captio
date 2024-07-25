@@ -6,7 +6,7 @@ const Features = () => {
           Features
         </h1>
         <p className="text-white text-lg  font-semibold leading-normal max-w-[720px]">
-          Our platform has everything you need to prepare for the JEE.
+          Our platform offers powerful features that make it easy to shorten.
         </p>
       </div>
       <div className="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-0">
@@ -32,7 +32,8 @@ const Features = () => {
               One Click Shortening
             </h2>
             <p className="text-[#637588] text-base font-normal leading-normal">
-            Shorten your lengthy URLs instantly with just one click, and enjoy the convenience of not having to create an account.
+              Shorten your lengthy URLs instantly with just one click, and enjoy
+              the convenience of not having to create an account.
             </p>
           </div>
         </div>
@@ -58,7 +59,8 @@ const Features = () => {
               Custom Links
             </h2>
             <p className="text-[#637588] text-base font-normal leading-normal">
-            Looking to add a personal touch to your shortened URLs? With Captio, you have the ability to customize your shortened links.
+              Looking to add a personal touch to your shortened URLs? With
+              Captio, you have the ability to customize your shortened links.
             </p>
           </div>
         </div>
@@ -84,7 +86,8 @@ const Features = () => {
               Link Management
             </h2>
             <p className="text-[#637588] text-base font-normal leading-normal">
-            Our comprehensive dashboard provides you with all the tools you need to monitor, edit, and track your shortened URLs with ease
+              Our comprehensive dashboard provides you with all the tools you
+              need to monitor, edit, and track your shortened URLs with ease
             </p>
           </div>
         </div>
@@ -110,7 +113,8 @@ const Features = () => {
               Safe and secure
             </h2>
             <p className="text-[#637588] text-base font-normal leading-normal">
-            We take your privacy and security very seriously. Your data is securely encrypted and never shared with third parties.
+              We take your privacy and security very seriously. Your data is
+              securely encrypted and never shared with third parties.
             </p>
           </div>
         </div>
@@ -136,7 +140,9 @@ const Features = () => {
               Always Free
             </h2>
             <p className="text-[#637588] text-base font-normal leading-normal">
-            Enjoy unlimited access to our service with the ability to create an infinite number of shortened URLs at no cost. There are no hidden fees.
+              Enjoy unlimited access to our service with the ability to create
+              an infinite number of shortened URLs at no cost. There are no
+              hidden fees.
             </p>
           </div>
         </div>
