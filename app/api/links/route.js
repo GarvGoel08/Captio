@@ -3,7 +3,7 @@ import catchAsync from "@/middleware/catchAsync";
 import Link from "@/models/links";
 import { NextResponse } from "next/server";
 
-dbConnect();
+await dbConnect();
 
 // Get Request with catchAsync
 
