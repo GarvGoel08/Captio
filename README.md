@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Capt.io Frontend
 
-## Getting Started
+## Live Website Link
+The live Link to visite Captio is coming soon..
 
-First, run the development server:
+## Overview
+Capt.io is a URL shortening service that provides users with the ability to create shorter versions of long URLs for easier sharing and management. This repository contains the frontend code for Capt.io, built using ReactJS.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Version History
+- **V0.1 (Development)** 
+  Date: July 25
+  - Initial NextJS Setup done
+  - Added a Home Page (Frontend Only) with a hero section, features and footer
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Current Features
+- **Landing Page**
+  - Includes Hero, Features, and Footer.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Upcoming Features
+- **Link Creation and Redirection**
+  - Allows users to create shortened links and share them with others.
+- **User Authentication**
+  - Sign up and login functionality
+  - User dashboard to manage shortened URLs
+- **URL Analytics**
+  - Click tracking
+  - Geographical data
+- **Custom URL Aliases**
+  - Allow users to create custom aliases for their shortened URLs
+- **Responsive Design**
+  - Improved mobile and tablet responsiveness
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Contact
+For any inquiries or support, please contact [garvgoel2927@gmail.com](mailto:garvgoel2927@gmail.com).
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+We hope you find Capt.io useful and look forward to your feedback!
