@@ -3,7 +3,7 @@ import catchAsync from "@/middleware/catchAsync";
 import Link from "@/models/links";
 import { NextResponse } from "next/server";
 
-dbConnect();
+await dbConnect();
 
 export const GET = catchAsync(async (req, context) => {
   const {code} = context.params;

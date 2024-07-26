@@ -7,6 +7,11 @@ The live Link to visite Captio is coming soon..
 Capt.io is a URL shortening service that provides users with the ability to create shorter versions of long URLs for easier sharing and management. This repository contains the frontend code for Capt.io, built using NextJS.
 
 ### Version History
+- **V0.4(Development)** 
+  Date: July 26
+  - Completed SignUp functionality
+  - UI Changes to Shortened Link Popup: Changed Color, Format and added Copy button
+  - Bug Fix: Fixed responsiveness Issue on Hero Section: Home Page
 - **V0.3(Development)** 
   Date: July 25
   - Added rediredction from shortened URL to target URL
