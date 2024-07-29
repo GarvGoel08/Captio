@@ -8,6 +8,11 @@ Capt.io is a URL shortening service that provides users with the ability to crea
 
 ### Version History
 - **V0.4(Development)** 
+  Date: July 29
+  - Bug Fix: Fixed overflowing text of shortener button.
+  - Bug Fix: Fixed alignment of subheading in features section.
+  - Bug Fix: Fixed z-index issue on Shortened Link Popup.
+- **V0.4(Development)** 
   Date: July 26
   - Completed SignUp functionality
   - UI Changes to Shortened Link Popup: Changed Color, Format and added Copy button

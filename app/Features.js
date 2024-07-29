@@ -5,7 +5,7 @@ const Features = () => {
         <h1 className="text-white tracking-light text-4xl font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
           Features
         </h1>
-        <p className="text-white text-lg  font-semibold leading-normal max-w-[720px]">
+        <p className="text-white text-lg  font-semibold leading-normal text-center max-w-[720px]">
           Our platform offers powerful features that make it easy to shorten.
         </p>
       </div>

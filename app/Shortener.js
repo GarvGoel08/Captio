@@ -64,7 +64,7 @@ const Shortener = () => {
 
         <button
           onClick={handleButtonClick}
-          className="group bg-black bg-opacity-25 max-sm:w-[40px] shadow-lg shadow-gray-700/50 backdrop-blur-lg border border-white/20 p-2 px-2.5 rounded-md ml-3 max-sm:ml-0 max-sm:mt-2 duration-150 hover:border-blue-500 ease-in"
+          className="group bg-black bg-opacity-25 shadow-lg shadow-gray-700/50 backdrop-blur-lg border border-white/20 p-2 px-2.5 rounded-md ml-3 max-sm:ml-0 max-sm:mt-2 duration-150 hover:border-blue-500 ease-in"
         >
           {loading ? (
             <span>Loading...</span>

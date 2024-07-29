@@ -23,10 +23,14 @@ export const PUT = catchAsync(async (req, context) => {
       headers: { "Content-Type": "application/json" },
     });
   }
-
-  const newUser = await User.create({ name, email, password });
-  return new NextResponse(JSON.stringify(newUser), {
-    status: 201,
-    headers: { "Content-Type": "application/json" },
-  });
+  const otp = Math.floor(100000 + Math.random() * 900000).toString();
+  const newUser = await User.create({ name, email, password, otp });
+  return new NextResponse(
+    JSON.stringify({ success: "User created successfully", newUser }),
+    {
+      status: 201,
+      headers: { "Content-Type": "application/json" },
+    }
+  );
 });
+

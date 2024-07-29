@@ -3,7 +3,7 @@ import { useState } from "react";
 const ShortenedLinkPopup = ({ shortenedLink, onClose }) => {
   return (
     shortenedLink && (
-      <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 group block bg-black bg-opacity-25 shadow-lg shadow-gray-700/50 backdrop-blur-lg border border-white/20  rounded-md duration-150 hover:border-blue-500 ease-in p-6 text-center">
+      <div className="fixed z-10 bottom-4 left-1/2 transform -translate-x-1/2 group block bg-black bg-opacity-25 shadow-lg shadow-gray-700/50 backdrop-blur-lg border border-white/20  rounded-md duration-150 hover:border-blue-500 ease-in p-6 text-center">
         <svg
           onClick={onClose}
           className="absolute top-2 right-2 fill-current text-white cursor-pointer"
