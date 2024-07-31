@@ -5,18 +5,11 @@ import { useState } from "react";
 
 export default function Form() {
   const router = useRouter();
-  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
   const signUp = async () => {
-    console.log(name, email, password, confirmPassword);
-    if (!name || !email || !password || !confirmPassword) {
+    if (!email || !password) {
       alert("All fields are required");
-      return;
-    }
-    if (password !== confirmPassword) {
-      alert("Passwords do not match");
       return;
     }
 
@@ -30,15 +23,15 @@ export default function Form() {
       return;
     }
 
-    const res = await fetch("/api/user", {
+    const res = await fetch("/api/user/login", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ name, email, password }),
+      body: JSON.stringify({  email, password }),
     });
     if (res.ok) {
-      router.push(`/OTP?email=${encodeURIComponent(email)}`);
+      alert("User created successfully");
     } else {
       console.log(res);
       alert(
@@ -51,19 +44,9 @@ export default function Form() {
     <div className="grow flex items-center justify-center">
       <div className="bg-[#0b0c19] flex flex-col my-10 mx-2 text-white p-6 py-8 rounded-lg overflow-x-hidden  min-w-[490px] max-sm:min-w-0 max-sm:w-full">
         <div className="font-semibold text-center text-2xl mb-4">
-          SignUp to Capt.io
+          Login to Capt.io
         </div>
         <div className="flex flex-col text-sm gap-4 mt-4">
-          <div className="flex flex-col gap-1">
-            <div>Name</div>
-            <input
-              type="text"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              placeholder="John Doe"
-              className="p-2 focus:outline-none ease-in duration-150 focus:border-blue-500 hover:border-blue-500  rounded-md bg-[#111222] bg-opacity-25 shadow-gray-700/50 backdrop-blur-lg border border-white/20"
-            />
-          </div>
           <div className="flex flex-col gap-1">
             <div>Email</div>
             <input
@@ -84,27 +67,17 @@ export default function Form() {
               className="p-2 focus:outline-none ease-in duration-150 focus:border-blue-500 hover:border-blue-500  rounded-md bg-[#111222] bg-opacity-25 shadow-gray-700/50 backdrop-blur-lg border border-white/20"
             />
           </div>
-          <div className="flex flex-col gap-1">
-            <div>Confirm Password</div>
-            <input
-              type="password"
-              value={confirmPassword}
-              onChange={(e) => setConfirmPassword(e.target.value)}
-              placeholder="Password"
-              className="p-2 focus:outline-none ease-in duration-150 focus:border-blue-500 hover:border-blue-500  rounded-md bg-[#111222] bg-opacity-25 shadow-gray-700/50 backdrop-blur-lg border border-white/20"
-            />
-          </div>
         </div>
         <button
           onClick={() => signUp()}
           className="bg-blue-800 ease-in duration-150 hover:bg-blue-700 text-white rounded-md p-2 mt-6"
         >
-          SignUp
+          Login
         </button>
         <div className="text-center mt-4">
-          Already have an account?{" "}
-          <Link href="/Login" className="underline text-blue-500">
-            Login
+          New to Captio?{" "}
+          <Link href="/SignUp" className="underline text-blue-500">
+            SignUp
           </Link>
         </div>
       </div>

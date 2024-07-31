@@ -16,7 +16,12 @@ const userSchema = new mongoose.Schema(
       required: true,
     },
     otp: {
-      type: Number,
+      code: {
+        type: String,
+      },
+      expiration: {
+        type: Date,
+      },
     },
   },
   { timestamps: true }
