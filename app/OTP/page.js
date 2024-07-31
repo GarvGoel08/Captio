@@ -2,6 +2,7 @@ import Image from "next/image";
 import Footer from "../Footer";
 import Link from "next/link";
 import Form from "./Form";
+import { Suspense } from "react";
 
 export default function page() {
   return (
@@ -15,7 +16,9 @@ export default function page() {
           Capt.io
         </Link>
       </div>
-      <Form/>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Form />
+      </Suspense>
       <Footer />
     </div>
   );
